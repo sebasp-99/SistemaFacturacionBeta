@@ -17,18 +17,18 @@ INSERT INTO Monedas (Codigo, Nombre, Simbolo)
 VALUES 
     ('USD', 'Dólar estadounidense', '$'),
     ('EUR', 'Euro', '€'),
-    ('MXN', 'Peso mexicano', '$');
+    ('COP', 'Peso colombiano', '$');
 
 -- Insertar datos en la tabla Gastos
 INSERT INTO Gastos (UsuarioId, CategoriaId, MonedaId, Monto, Fecha, Descripcion)
 VALUES 
-    (1, 1, 1, 150.75, GETDATE(), 'Compra en supermercado'),
-    (2, 2, 2, 50.00, GETDATE(), 'Taxi al trabajo'),
-    (3, 3, 3, 200.00, GETDATE(), 'Entradas para el cine');
+    (1, 1, 1, 150.75, '2025-04-05', 'Compra en supermercado'),
+    (2, 2, 2, 50.00, '2025-04-05', 'Metro al trabajo'),
+    (3, 3, 3, 200.00, '2025-03-08', 'Entradas para el cine');
 
 -- Insertar datos en la tabla Presupuestos
 INSERT INTO Presupuestos (UsuarioId, CategoriaId, MonedaId, Limite, FechaInicio, FechaFin)
 VALUES 
-    (1, 1, 1, 500.00, '2025-04-01', '2025-04-30'),
-    (2, 2, 2, 200.00, '2025-04-01', '2025-04-30'),
-    (3, 3, 3, 300.00, '2025-04-01', '2025-04-30');
+    (1, 1, 1, 380.00, '2025-01-01', '2025-01-30'),
+    (2, 2, 3, 7000000.00, '2025-02-01', '2025-02-30'),
+    (3, 3, 3, 1300000.00, '2025-03-01', '2025-03-30');
