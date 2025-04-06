@@ -1,3 +1,59 @@
-# SistemaFacturacionBeta
+# SistemaGestionGastos
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio inventore dicta sequi repellendus provident repudiandae, consectetur quis, perspiciatis, molestiae nihil dolore reprehenderit. A laboriosam sed quisquam fuga. Commodi ab suscipit, corporis, dolorum ipsum architecto vel maxime voluptatem, nemo harum nobis consequatur. Ipsum itaque, repellat explicabo esse nulla rem! Dicta, earum nisi officiis esse itaque perferendis corrupti doloribus porro tempore asperiores voluptas accusantium animi, aspernatur deserunt sint impedit ab minus natus dolores excepturi error qui non eos id! Assumenda, eveniet! Rerum, accusantium quidem aliquam quis doloremque obcaecati amet fugiat porro vel voluptatum cum fugit dolorem exercitationem voluptatibus dolore atque quae ab totam distinctio placeat, unde nam? Quis debitis a accusamus ullam molestiae dicta non repellendus distinctio eligendi, aliquid, enim quasi velit aliquam? Asperiores perferendis eum voluptates porro minima voluptatibus repudiandae, dignissimos delectus vel impedit suscipit, eos distinctio iure, quae voluptas ab. Natus repudiandae ipsam fugiat quo libero, iusto expedita nam. Omnis, voluptatibus eligendi maiores perspiciatis necessitatibus nemo ut aliquam quos! Nostrum, perspiciatis. Beatae doloremque rerum labore eligendi deserunt? Fugit repellendus distinctio voluptate omnis optio vel ut et, labore temporibus quas exercitationem nam? Amet officia, nulla provident quibusdam sunt obcaecati minima repudiandae consequatur quae dolores, facere in quas illo, possimus hic ea dolor autem deleniti culpa? Inventore, explicabo? Temporibus accusantium, in nulla nesciunt blanditiis obcaecati doloremque ipsum, inventore expedita assumenda fugit animi. Veniam iusto consequuntur similique sapiente placeat adipisci harum est enim pariatur. Doloribus placeat commodi ex eveniet, labore, maxime dolore laborum a perspiciatis quod ipsum repellendus incidunt reprehenderit est maiores tempora voluptatibus dolorum distinctio perferendis provident eaque facere explicabo fuga! Voluptatem architecto atque neque, ipsum enim molestias vitae quas ut quaerat velit accusantium, commodi voluptas aperiam? Reiciendis nihil repellat architecto quod ex magnam expedita, animi perferendis dolorem error tempora ad aliquam corrupti, beatae impedit laborum omnis nesciunt dolore pariatur. Recusandae nisi iusto odit sequi laborum qui nulla itaque aspernatur labore dolorem? Reiciendis blanditiis odit quaerat, repellendus laboriosam atque perspiciatis ducimus sapiente maxime, dignissimos tenetur. Fuga autem magnam natus porro nobis. Unde praesentium fuga dolorum pariatur libero animi voluptate vitae maxime, nulla, quidem molestiae. Animi doloremque fugiat illum odio suscipit voluptatem, eos repellendus dignissimos sequi vero autem accusamus necessitatibus deserunt officia aut officiis laudantium eius neque voluptatibus omnis ullam ipsum odit. Fugiat nemo dicta quasi, numquam aliquam officia, dolores facere, sapiente a eveniet temporibus suscipit itaque porro veritatis culpa laborum incidunt ipsum molestiae. Reprehenderit adipisci doloremque delectus minima sequi perspiciatis, dolor quis omnis earum. Reiciendis deserunt excepturi nobis repudiandae dolores obcaecati dolorem recusandae qui possimus at perferendis amet fuga nesciunt commodi nisi vel quam praesentium harum, expedita, voluptatem laboriosam velit. Expedita, animi? Soluta consectetur tempora, fugiat quia officia quis nemo a cumque autem quod illo accusantium porro vero magni dolores laboriosam vitae non quas. Nisi odit tempore, aut possimus laudantium sunt deserunt dolorum! Itaque, reiciendis! Praesentium, quis. Ratione numquam eligendi nobis molestiae quos! Temporibus quaerat cumque tempora, quod fugiat quas! Eius voluptatibus, explicabo ex perspiciatis magni saepe, architecto aliquid suscipit maiores ut nisi quia accusamus commodi iste odit cupiditate fuga ullam. Sunt?
+# Instrucciones para ejecutar un script de Base de Datos y su Seed
+
+## 1. Requisitos Previos
+Antes de comenzar, asegúrate de tener:
+- **Servidor de base de datos** en funcionamiento (por ejemplo, SQL Server, MySQL, PostgreSQL).
+- Herramienta para ejecutar los scripts, como:
+  - **SQL Server Management Studio (SSMS)** para SQL Server.
+  - **MySQL Workbench** para MySQL.
+  - **pgAdmin** para PostgreSQL.
+- El archivo de script de creación de la base de datos (ej. `database_script.sql`).
+- El archivo de seed para datos iniciales (ej. `seed_data.sql`).
+
+---
+
+## 2. Pasos para ejecutar el Script de la Base de Datos
+1. **Abre tu herramienta de base de datos**.
+2. **Conéctate al servidor de base de datos**:
+   - Introduce las credenciales necesarias (usuario, contraseña, host, puerto, etc.).
+3. **Selecciona la base de datos adecuada**:
+   - Si el script incluye la creación de la base de datos, este paso no es necesario.
+   - Si no, asegúrate de que la base de datos ya exista.
+4. **Carga el archivo del script**:
+   - Abre el archivo `database_script.sql` en la herramienta.
+   - Revisa el contenido para verificar que se ajusta a tus necesidades.
+5. **Ejecuta el script**:
+   - Haz clic en el botón de "Ejecutar" o usa el comando adecuado según la herramienta:
+     - En SSMS: `F5`.
+     - En MySQL Workbench: `CTRL+SHIFT+ENTER`.
+     - En pgAdmin: Botón de "Ejecutar/Run".
+
+---
+
+## 3. Pasos para ejecutar el Seed (datos iniciales)
+1. **Abre el archivo de seed**:
+   - Carga el archivo `seed_data.sql` en la herramienta de base de datos.
+2. **Verifica las inserciones**:
+   - Asegúrate de que las tablas referenciadas en el seed ya existan.
+3. **Ejecuta el script de seed**:
+   - Usa la misma herramienta y procedimiento que el script de creación de la base de datos.
+4. **Confirma que los datos se hayan insertado correctamente**:
+   - Ejecuta una consulta sencilla para verificar los datos:
+     ```sql
+     SELECT * FROM NombreDeLaTabla LIMIT 10;
+     ```
+
+---
+
+## 4. Notas Importantes
+- **Orden de ejecución**: Siempre ejecuta el script de creación de la base de datos antes que el seed.
+- **Respaldo previo**: Si trabajas en un entorno existente, realiza un respaldo de los datos antes de ejecutar los scripts.
+- **Errores comunes**:
+  - Si el script falla, verifica que no haya conflictos de nombres, permisos insuficientes o errores de sintaxis.
+  - Lee los mensajes de error que proporciona la herramienta para corregir cualquier problema.
+
+---
+
+¡Y listo! Con estos pasos deberías ser capaz de ejecutar los scripts y poblar tu base de datos correctamente. 🚀
