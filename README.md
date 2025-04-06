@@ -52,3 +52,11 @@ Antes de comenzar, asegúrate de tener:
 ---
 
 ¡Y listo! Con estos pasos deberías ser capaz de ejecutar los scripts y poblar tu base de datos correctamente. 🚀
+
+
+## Descripción del modelo de datos.
+Este modelo permite:
+1. Registrar gastos clasificados por categorías y monedas.
+2. Establecer presupuestos por categoría y moneda en rangos de fechas.
+3. Mantener la integridad y consistencia de los datos mediante claves foráneas.
+
