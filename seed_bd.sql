@@ -30,5 +30,5 @@ VALUES
 INSERT INTO Presupuestos (UsuarioId, CategoriaId, MonedaId, Limite, FechaInicio, FechaFin)
 VALUES 
     (1, 1, 1, 380.00, '2025-01-01', '2025-01-30'),
-    (2, 2, 3, 7000000.00, '2025-02-01', '2025-02-30'),
+    (2, 2, 3, 7000000.00, '2025-02-01', '2025-02-28'),
     (3, 3, 3, 1300000.00, '2025-03-01', '2025-03-30');
